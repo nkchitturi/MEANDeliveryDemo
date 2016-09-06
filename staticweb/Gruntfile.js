@@ -586,7 +586,7 @@ module.exports = function ( grunt ) {
           replacements: [
         {
           pattern: '$SERVER_API_ROOT',
-          replacement:'http://demoapp-qa.elasticbeanstalk.com'
+          replacement:'http://kiran-cicd-eb.elasticbeanstalk.com'
         }
         ]
       }
@@ -599,7 +599,7 @@ module.exports = function ( grunt ) {
           replacements: [
             {
               pattern: '$SERVER_API_ROOT',
-              replacement:'http://demoapp-prod.elasticbeanstalk.com'
+              replacement:'http://kiran-cicd-eb-prod.elasticbeanstalk.com'
             }
           ]
         }
