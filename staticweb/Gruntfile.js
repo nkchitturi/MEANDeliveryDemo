@@ -633,17 +633,18 @@ grunt.registerTask( 'watch', [ 'build:dev', 'delta' ] );
     'clean', 'html2js', 'jshint', 'coffeelint', 'coffee', 'less:build',
     'concat:build_css', 'copy:build_app_assets', 'copy:build_vendor_assets',
     'copy:build_appjs', 'copy:build_vendorjs', 'copy:build_vendorcss', 'index:build',
-    'string-replace:dev','karmaconfig','karma:continuous'
+    'string-replace:dev'
   ]);
 
   /**
   * The `build:qa` task gets your app ready to run for development and testing.
   */
+  // removed karma entries - 'string-replace:qa','karmaconfig','karma:continuous'
   grunt.registerTask( 'build:qa', [
     'clean', 'html2js', 'jshint', 'coffeelint', 'coffee', 'less:build',
     'concat:build_css', 'copy:build_app_assets', 'copy:build_vendor_assets',
     'copy:build_appjs', 'copy:build_vendorjs', 'copy:build_vendorcss', 'index:build',
-    'string-replace:qa','karmaconfig','karma:continuous'
+    'string-replace:qa'
   ]);
 
   /**
@@ -653,7 +654,7 @@ grunt.registerTask( 'watch', [ 'build:dev', 'delta' ] );
     'clean', 'html2js', 'jshint', 'coffeelint', 'coffee', 'less:build',
     'concat:build_css', 'copy:build_app_assets', 'copy:build_vendor_assets',
     'copy:build_appjs', 'copy:build_vendorjs', 'copy:build_vendorcss', 'index:build',
-    'string-replace:prod','karmaconfig','karma:continuous'
+    'string-replace:prod'
   ]);
 
   /**
